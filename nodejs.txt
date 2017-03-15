@@ -17,3 +17,17 @@ Node.js is a single-threaded application, but it can support concurrency via the
 
 In Node Application, any async function accepts a callback as the last parameter and a callback function accepts an error as the first parameter. fs.readFile('input.txt', function (err, data) {
 
+
+EventEmitter Class
+addListener(event, listener)
+on(event, listener)
+once(event, listener)
+removeListener(event, listener)
+removeAllListeners([event])
+setMaxListeners(n)
+listeners(event)  //Returns an array of listeners for the specified event.
+emit(event, [arg1], [arg2], [...])
+
+listenerCount(emitter, event)  //Class method
+
+
