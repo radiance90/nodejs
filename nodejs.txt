@@ -48,3 +48,12 @@ buf.slice([start][, end]) //Negative indexes start from the end of the buffer.
 buf.length;
 Buffer.compare(buf1, buf2)  //The same as buf1.compare(buf2). Useful for sorting an array of buffers.
 Buffer.isBuffer(obj)
+
+
+////stream////
+Each type of Stream is an EventEmitter instance and throws several events at different instance of times. 
+data − This event is fired when there is data is available to read.
+end − This event is fired when there is no more data to read.
+error − This event is fired when there is any error receiving or writing data.
+finish − This event is fired when all the data has been flushed to underlying system.
+
