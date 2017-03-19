@@ -134,3 +134,9 @@ fs.stat(path, callback)
 fs.fstat(fd, callback)
 
 
+////global objects////
+The __filename represents the filename of the code being executed. This is the resolved absolute path of this code file.
+The __dirname represents the name of the directory that the currently executing script resides in.
+The setTimeout(cb, ms) global function is used to run callback cb after at least ms milliseconds. The actual delay depends on external factors like OS timer granularity and system load. A timer cannot span more than 24.8 days.
+The clearTimeout(t) global function is used to stop a timer that was previously created with setTimeout(). Here t is the timer returned by the setTimeout() function.
+The setInterval(cb, ms) global function is used to run callback cb repeatedly after at least ms milliseconds. The actual delay depends on external factors like OS timer granularity and system load. A timer cannot span more than 24.8 days.
